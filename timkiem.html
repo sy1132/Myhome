@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tìm kiếm</title>
+    <link rel="icon" href="img/MY_HOME-removebg-preview.png">
+    <link rel="stylesheet" href="css/sanpham2.css">
+    <script src="https://kit.fontawesome.com/40cbf81f01.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    function searchTable() {
+    var input, filter, table, tr, td, i, j, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 1; i < tr.length; i++) {
+      for (j = 0; j < 3; j++) {
+        td = tr[i].getElementsByTagName("td")[j];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+            break;
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  }
+  
+  </script>
+<body >
+    <header>
+        <div ><a href="web.html"><img src="img/anh nen.png" alt="logo"></a></div>
+            <p>CHÚNG TÔI PHỤC VÌ NỤ CƯỜI CỦA BẠN!</p>
+        
+    </header>
+    <nav>
+        <div id="menu1">
+        <ul>
+          <li><a href="web.html">Trang chủ</a></li>
+            <li><a href="login.html">Đăng nhập/Đăng ký</a></li>
+            <li><a href="dathang.html">đặt hàng</a></li>
+            <li><a href="ttkh.html">thông tin khách hàng</a></li>
+            <li><a href="timkiem.html">tìm kiếm</a></li>
+        </ul>
+    </div>
+    </nav>    
+    
+    <div class="slide1">
+            <marquee direction="right" scrollamount="5" scrolldelay="20" onmousemove="stop()" onmouseout="start()">
+                <!-- <img src="img/MY HOME.png" width="70"/><a href="#"></a>
+                <img src="img/anh nen.png" width="70"/><a href="#"></a>
+                <img src="img/noithat.jfif" width="70"/><a href="#"></a>
+                <img src="img/noithat.jfif" width="70"/><a href="#"></a> -->
+                Từ ngày 04/04 năm 2050 siêu sale giảm 30% trên giá trị đơn hàng.
+            </marquee>
+    </div>
+    <div>
+        <div class="hinh">
+            <p>Tìm kiếm
+            </p>
+        </div>
+        <div class="tk">
+      <input type="text" id="myInput" onkeyup="searchTable()" placeholder="Tìm kiếm...">
+      </div>
+      <table id="myTable" class="bo">
+        <tr><th>
+          Kết quả</th>
+        </tr>
+        <tr>
+          <td><a href="sp/bantren5tr.html">bàn gỗ me tây</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/bantren2tr.html">bàn làm việc gỗ hiện đại</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/bantren4tr.html">bàn phòng thu studio hình chữ z</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/bantren1tr.html">bàn z kính trọng lực</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/bantren3tr.html">bàn giám đốc gỗ cao su</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ban1tr.html">bàn học sinh</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ghe1tr.html">ghế văn phòng tay gập chân xoay</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ghetren1tr.html">ghế xoay lưng trung lưới</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ghetren2tr.html">ghế văn phòng cao cấp</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ghetren3tr.html">ghế xoay lưng FELIX</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ghetren4tr.html">ghế công thái học ERGONOMIC FELIX</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/ghetren5tr.html">ghế lãnh đạo da bò YTALYA</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/den1tr.html">đèn thả trang trí bàn ăn</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/dentren1tr.html">đèn led thả trần văn phòng cao cấp</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/dentren2tr.html">đèn chùm hiện đại</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/dentren3tr.html">đèn chùm vàng sang trọng</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/dentren4tr.html">đèn chùm cổ điển kiểu dáng cao cấp</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/dentren5tr.html">đèn chùm DOPSKY pha lê cao cấp</a></td>
+        </tr>
+        <tr>
+          <td><a href="sp/trang1tr.html">đồng hồ treo tường vũ trụ sáng tạo</a></td>
+          </tr>
+          <tr>
+            <td><a href="sp/trangtren1tr.html">đồng hồ con công</a></td>
+          </tr>
+          <tr>
+            <td><a href="sp/trangtren2tr.html">Tranh sơn dầu sơn thủy hữu tình cây tùng và thuyển buồm</a></td>
+          </tr>
+          <tr>
+            <td><a href="sp/trangtren3tr.html">tranh sắt treo tường nghệ thuật</a></td>
+          </tr>
+          <tr>
+            <td><a href="sp/trangtren4tr.html">tranh phù điêu 3D cao cấp</a></td>
+          </tr>
+          <tr>
+            <td><a href="sp/trangtren5tr.html">tranh chữ phật hoa sen dát vàng</a></td>
+          </tr>
+        </tr>
+      </table>
+    <footer>
+        <p>Website chuyên bán đồ trang trí trong nhà</p>
+        <p>liên hệ <a href="https://www.facebook.com/profile.php?id=100033456723193">Nguyễn nhật tân</a> <a href="https://www.facebook.com/sy.nguyenvan.31337">Nguyễn Văn Sỹ</a></p>
+        <p>Đề án@2023</p>
+    </footer>
+</body>
+</html>
